@@ -9,6 +9,7 @@ import FontAwesome6 from "react-native-vector-icons/FontAwesome6";
 import Feather from "react-native-vector-icons/Feather";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import { StyleSheet, View } from "react-native";
+import PushNotifications from "../Services/PushNotification";
 
 const Tab = createBottomTabNavigator<RootStackParamList>();
 
@@ -88,6 +89,7 @@ const Navigation = () => {
           }}
         />
       </Tab.Navigator>
+      <PushNotifications />
     </NavigationContainer>
   );
 };
